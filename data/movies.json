@@ -1,0 +1,37 @@
+[
+  {
+    "id": "m_001",
+    "title": "The Garbage Pail Kids Movie",
+    "suggestedBy": "Seed Data",
+    "createdAt": "2026-05-19T12:00:00.000Z",
+    "selected": false
+  },
+  {
+    "id": "m_002",
+    "title": "Cats",
+    "suggestedBy": "Seed Data",
+    "createdAt": "2026-05-19T12:01:00.000Z",
+    "selected": false
+  },
+  {
+    "id": "m_003",
+    "title": "Miami Connection",
+    "suggestedBy": "Seed Data",
+    "createdAt": "2026-05-19T12:02:00.000Z",
+    "selected": true
+  },
+  {
+    "id": "m_004",
+    "title": "The Room",
+    "suggestedBy": "Seed Data",
+    "createdAt": "2026-05-19T12:03:00.000Z",
+    "selected": false
+  },
+  {
+    "id": "m_005",
+    "title": "Troll 2",
+    "suggestedBy": "Seed Data",
+    "createdAt": "2026-05-19T12:04:00.000Z",
+    "selected": false
+  }
+]

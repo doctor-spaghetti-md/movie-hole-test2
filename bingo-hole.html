@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Hole | Bingo Hole</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="film-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Movie Hole home">
+      <span class="brand-main glitch" data-text="Movie Hole">Movie Hole</span>
+      <span class="brand-sub">Hole For Movies. The World Wide Hole.</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Suggest</a>
+      <a href="suggestions.html">Suggestions</a>
+      <a class="active" href="bingo-hole.html">Bingo Hole</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <main class="app-shell">
+    <section class="hero card compact">
+      <p class="eyebrow">Random selector</p>
+      <h1 class="page-title glitch" data-text="Bingo Hole">Bingo Hole</h1>
+      <p>
+        This is our random selector of all the movies that have not been done yet. Once they've been added to our Bingo Hole, they will go into an undetermined state. This is because, after all, we're doing this all to fight terrorism. The random selector was created to provide security, so only those who really understand the process should even try to hack it.
+      </p>
+    </section>
+
+    <section class="card bingo-machine">
+      <div class="screen" id="bingoScreen">UNDETERMINED STATE</div>
+      <button id="drawButton" type="button">Draw from the Hole</button>
+      <button id="markSelectedButton" type="button" class="secondary" disabled>Mark as Selected</button>
+      <p class="admin-note">Admin code required to mark a movie as selected.</p>
+      <p id="bingoMessage" class="form-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>Eligible movies</h2>
+      <div id="eligibleList" class="mini-list"></div>
+    </section>
+  </main>
+
+  <dialog class="admin-dialog" id="adminDialog" aria-labelledby="adminDialogTitle">
+    <form method="dialog" class="admin-dialog-card" id="adminCodeForm">
+      <button class="dialog-close" value="cancel" aria-label="Close">×</button>
+      <p class="eyebrow">Restricted hole activity</p>
+      <h2 id="adminDialogTitle">Enter admin code</h2>
+      <p class="dialog-copy">Only authorized personnel may remove a movie from the undetermined state.</p>
+      <label for="adminCodeInput">Admin code</label>
+      <input id="adminCodeInput" name="adminCode" type="password" autocomplete="off" placeholder="Enter code" />
+      <menu class="dialog-actions">
+        <button type="submit" value="default">Confirm selection</button>
+        <button type="button" class="secondary" id="cancelAdminCode">Cancel</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>Piss in my pants publications, all movies copyright. You can't sue us, our website is only readable with the latest version of browser and some readers with the patented Flash® plugin. all movies listed in this hole are owned by their original owners and distributors, piss in my pants publishes no intellectual property unless otherwise stated.</p>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/bingo.js"></script>
+</body>
+</html>

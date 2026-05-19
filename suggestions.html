@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Hole | Suggestions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="film-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Movie Hole home">
+      <span class="brand-main glitch" data-text="Movie Hole">Movie Hole</span>
+      <span class="brand-sub">Hole For Movies. The World Wide Hole.</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Suggest</a>
+      <a class="active" href="suggestions.html">Suggestions</a>
+      <a href="bingo-hole.html">Bingo Hole</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <main class="app-shell">
+    <section class="hero card compact">
+      <p class="eyebrow">Movie Suggestions</p>
+      <h1 class="page-title">Suggested for the Hole</h1>
+      <p>These are the movies that have been suggested and are eligible for bingo hole selection. It's all here.</p>
+    </section>
+
+    <section class="card list-tools">
+      <label for="searchInput">Search suggestions</label>
+      <input id="searchInput" type="search" placeholder="Search the hole..." />
+      <div class="stats-row">
+        <span id="totalCount">0 total</span>
+        <span id="eligibleCount">0 eligible</span>
+        <span id="selectedCount">0 selected</span>
+      </div>
+    </section>
+
+    <section id="suggestionsList" class="suggestions-list" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Piss in my pants publications, all movies copyright. You can't sue us, our website is only readable with the latest version of browser and some readers with the patented Flash® plugin. all movies listed in this hole are owned by their original owners and distributors, piss in my pants publishes no intellectual property unless otherwise stated.</p>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/suggestions.js"></script>
+</body>
+</html>

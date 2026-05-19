@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Hole | Frick a Flick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="film-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Movie Hole home">
+      <span class="brand-main glitch" data-text="Movie Hole">Movie Hole</span>
+      <span class="brand-sub">Hole For Movies. The World Wide Hole.</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a class="active" href="index.html">Suggest</a>
+      <a href="suggestions.html">Suggestions</a>
+      <a href="bingo-hole.html">Bingo Hole</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <main class="app-shell">
+    <section class="hero card">
+      <p class="eyebrow">A Terrible Site for Terrible People Who Like Horrible Movies.</p>
+      <h1 class="page-title">Frick a Flick</h1>
+      <p class="slogan wobble">All your Dreams Come True.</p>
+    </section>
+
+    <section class="content-grid">
+      <article class="card copy-card">
+        <h2>Movie Suggestions Page</h2>
+
+        <p>
+          Here's the deal: if the movie has already been suggested, then you will get an error that says
+          <span class="warning-text">"please stop asking for movies we already have on file, you dick. Or you will be removed from this site and reported to the police"</span>.
+          <span class="police-alert">Uniformed men will arrive shortly at your address. And you will be shot to death.</span>
+        </p>
+
+        <p>
+          The good news is, if the movie is not on file yet, you are free to recommend as much as you'd like!
+          It will get added to our <a href="suggestions.html">'Suggestions'</a> page.
+          The suggested movies will go into what we call the <a href="bingo-hole.html">'Bingo Hole'</a> and will be selected at random.
+          Any suggestions already chosen from the bingo hole will be marked as selected and cannot be suggested again.
+        </p>
+
+        <p><a class="inline-cta" href="bingo-hole.html">See how the Bingo Hole works here!</a></p>
+
+        <p>
+          On our <a href="events.html">Events</a> page, we will have upcoming events listed as well as a poll for what day works best for you, the audience.
+          The movie chosen from the hole will be played live and simulcast on an emergency broadcast signal.
+        </p>
+
+        <div class="warning-box">
+          <strong>Warning:</strong> Lorem Ipsum text for now
+        </div>
+      </article>
+
+      <aside class="card form-card">
+        <h2>Please suggest your movie here.</h2>
+        <form id="suggestionForm" class="movie-form">
+          <label for="movieTitle">Movie title</label>
+          <input id="movieTitle" name="title" type="text" placeholder="ex: The Garbage Pail Kids Movie" required />
+
+          <label for="suggestedBy">Suggested by <span class="optional">(optional)</span></label>
+          <input id="suggestedBy" name="suggestedBy" type="text" placeholder="ex: Kat, probably" />
+
+          <button type="submit">Submit to the Hole</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Piss in my pants publications, all movies copyright. You can't sue us, our website is only readable with the latest version of browser and some readers with the patented Flash® plugin. all movies listed in this hole are owned by their original owners and distributors, piss in my pants publishes no intellectual property unless otherwise stated.</p>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/submit.js"></script>
+</body>
+</html>
