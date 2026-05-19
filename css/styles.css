@@ -186,6 +186,18 @@ a {
   text-shadow: 3px 3px 0 #000, -2px -1px 0 var(--acid);
 }
 
+
+.page-title2 {
+  margin: 0;
+  font-family: "Archivo Black", Impact, sans-serif;
+  text-transform: uppercase;
+font-size: clamp(1.6rem, 8vw, 4rem);
+  line-height: .85;
+  letter-spacing: -.075em;
+  color: var(--hot);
+  text-shadow: 3px 3px 0 #000, -2px -1px 0 var(--acid);
+}
+
 .slogan {
   display: inline-block;
   margin: .8rem 0 0;
